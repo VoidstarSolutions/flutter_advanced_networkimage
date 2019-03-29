@@ -154,8 +154,6 @@ class AdvancedNetworkSvg extends PictureProvider<AdvancedNetworkSvg> {
     if (key.fallbackImage != null)
       return await decode(key.fallbackImage, key.colorFilter, key.toString(),
           onError: onError);
-
-    throw Exception('Failed to load $url.');
   }
 
   Future<PictureInfo> decode(
